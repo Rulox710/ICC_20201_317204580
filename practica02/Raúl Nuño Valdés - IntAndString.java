@@ -1,5 +1,3 @@
-
-
 public class IntAndString{
 
     public static int producto(int a, int b){
