@@ -1,0 +1,19 @@
+<html>
+<svg width="750" height="750">
+<polygon points="10.0,25.0 350.0,25.0 180.0,350.0" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="10.0,25.0 180.0,25.0 95.0,187.5" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="10.0,25.0 95.0,25.0 52.5,106.25" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="10.0,25.0 52.5,25.0 31.25,65.625" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="10.0,25.0 31.25,25.0 20.625,45.3125" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="10.0,25.0 20.625,25.0 15.3125,35.15625" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="180.0,25.0 350.0,25.0 265.0,187.5" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="265.0,25.0 350.0,25.0 307.5,106.25" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="307.5,25.0 350.0,25.0 328.75,65.625" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="328.75,25.0 350.0,25.0 339.375,45.3125" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="339.375,25.0 350.0,25.0 344.6875,35.15625" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="95.0,187.5 265.0,187.5 180.0,350.0" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="137.5,268.75 222.5,268.75 180.0,350.0" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="158.75,309.375 201.25,309.375 180.0,350.0" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="169.375,329.6875 190.625,329.6875 180.0,350.0" style="fill:none;stroke:black;stroke-width:1" />
+<polygon points="174.6875,339.84375 185.3125,339.84375 180.0,350.0" style="fill:none;stroke:black;stroke-width:1" />
+</svg>
