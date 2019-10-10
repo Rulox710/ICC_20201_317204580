@@ -99,8 +99,7 @@ public class Triangulo{
      * @param nuevaY -Valor nuevo en el eje de las ordenadas
      */
     public void asignarCooX(double nuevaX, double nuevaY) {
-	this.v0.asignarX(nuevaX);
-	this.v0.asignarY(nuevaY);
+	this.v0 = new Vector2(nuevaX, nuevaY);
     }
 
     /**
@@ -116,8 +115,7 @@ public class Triangulo{
      * @param nuevaY -Valor nuevo en el eje de las ordenadas
      */
     public void	asignarCooY(double nuevaX, double nuevaY) {
-	this.v1.asignarX(nuevaX);
-        this.v1.asignarY(nuevaY);
+	this.v1 = new Vector2(nuevaX, nuevaY);
     }
 
     /**
@@ -133,8 +131,7 @@ public class Triangulo{
      * @param nuevaY -Valor nuevo en el eje de las ordenadas
      */
     public void	asignarCooZ(double nuevaX, double nuevaY) {
-	this.v2.asignarX(nuevaX);
-        this.v2.asignarY(nuevaY);
+	this.v2 = new Vector2(nuevaX, nuevaY);
     }
 
     /**

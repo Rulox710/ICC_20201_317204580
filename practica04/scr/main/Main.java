@@ -30,13 +30,13 @@ public class Main {
     public static Circulo c1 = new Circulo(v2, 100);
     public static Circulo cComparacion = new Circulo(); // Debe dar "false" pues no son iguales
 
-    public static Triangulo tr = new Triangulo(10,25 , 350,25 , (360/2),350);
+    public static Triangulo tr = new Triangulo(10,25 , 350,5 , 400,400);
 
     /*
      * Se ha escrito ciertas pruebas. Descomente la que quiera probar primero. 
      */
     public static void main(String []args) {	
-	//escribir();
+	escribir();
 
 	//todoEnSVG();
 
@@ -59,7 +59,7 @@ public class Main {
 	System.out.println("l1= " + l1.toString());
 	System.out.println("lCompararcion= " + lComparacion.toString());
 	System.out.println(compa + l1.equals(lComparacion) + "\n");
-	
+
 	System.out.println("r1= " + r1.toString());
 	System.out.println("rComparacion= " + rComparacion.toString());
 	System.out.println(compa + r1.equals(rComparacion) + "\n");

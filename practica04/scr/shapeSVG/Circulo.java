@@ -4,7 +4,8 @@ package shapeSVG;
  * Clase que crea un círculo
  *
  * @author Raul Nuño Valdés
- * @date 22 Septiembre 2019
+ * @date 22(24) Septiembre 2019
+ * @vesion Corrección
  */
 public class Circulo {
     private Vector2 centro;
@@ -87,8 +88,7 @@ public class Circulo {
      * @param nuevoCentroY -El valor a asignar en el eje de lass ordenadas
      */
     public void asignarC(double nuevoCentroX, double nuevoCentroY) {
-	this.centro.asignarX(nuevoCentroX);
-	this.centro.asignarY(nuevoCentroY);
+	this.centro = new Vector2(nuevoCentroX, nuevoCentroY);
     }
 
     /**

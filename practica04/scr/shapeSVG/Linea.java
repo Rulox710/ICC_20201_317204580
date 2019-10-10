@@ -4,7 +4,8 @@ package shapeSVG;
  * Clase para hacer una línea
  *
  * @author Raúl Nuño Valdés
- * @date 17 Septiembre 2019
+ * @date 17(24) Septiembre 2019
+ * @version Corrección
  */
 public class Linea {
     private Vector2 v1;
@@ -81,8 +82,7 @@ public class Linea {
      * @param nuevoY -El valor a asignar a la primera coordenada en el eje de las ordenadas
      */
     public void asignarCooX(double nuevoX, double nuevoY) {
-	this.v1.asignarX(nuevoX);
-	this.v1.asignarY(nuevoY);
+	this.v1 = new Vector2(nuevoX, nuevoY);
     }
 
     /**
@@ -98,7 +98,6 @@ public class Linea {
      * @param nuevoY -El valor a asignar a la segunda coordenada en el eje de las ordenadas    
      */
     public void asignarCooY(double nuevoX, double nuevoY) {
-	this.v2.asignarX(nuevoX);
-	this.v2.asignarY(nuevoY);
+	this.v2 = new Vector2(nuevoX, nuevoY);
     }
 }

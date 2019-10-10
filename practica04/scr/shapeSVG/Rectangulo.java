@@ -109,8 +109,8 @@ public class Rectangulo {
      * Método que cambia el vaolor de la coordenada inicial
      */
     public void asignarOrigen(double nuevoX, double nuevoY){
-	this.v0.asignarX(nuevoX);
-        this.v0.asignarY(nuevoY);
+	this.obtenerOrigen().asignarX(nuevoX);
+        this.obtenerOrigen().asignarY(nuevoY);
     }
 
     /**
