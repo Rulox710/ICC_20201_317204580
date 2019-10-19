@@ -120,7 +120,7 @@ public class Control {
 	} else {
 	    for (int i = 2; i < raiz; i++) {
 		chequeo = duda / i;
-		if (chequeo * i == duda){
+		if (chequeo * i == duda || chequeo * i == -duda) {
 		    return false;
 		}
 	    }

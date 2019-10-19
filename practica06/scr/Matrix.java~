@@ -1,0 +1,97 @@
+public class Matrix {
+
+    public int n;
+    public int m;
+    private double[][]matriz;
+
+    //Construye una matriz vacia de n por m
+    public Matrix(int n, int m) {
+	this.matriz = new double[n][m];
+	this.n = n;
+	this.m = m;
+    }
+    
+    //Construye una matriz dado un arreglo
+    public Matrix(double[][]array){
+	this.matriz = array;
+	/*
+	this.matriz = new double[array[0].length] [array.length];
+	for (int i = 0; i < array.length; i++) {
+	    for (int j = 0 ; j < array.length; j++) {
+		this.matriz[j][i] = array[i][j]; 
+	    }
+	    }*/
+	this.n = array.length;
+	this.m = array[0].length;
+    }
+    
+    //Función que calcula producto escalar
+    public void scalarProduct(double scalar){
+	for (int i = 0; i < this.matriz.length; i++) {
+	    for (int j = 0; j < this.matriz[0].length; j++) {
+		this.matriz[i][j] = this.matriz[i][j] * scalar;
+	    }
+	}
+    }
+    
+    //Función que calcula suma de matrices
+    public void add (Matrix m) {
+	if (this.matriz.length == m.matriz.length && this.matriz[0].length == m.matriz[0].length) {	    
+	    for (int i = 0; i < this.matriz.length; i++) {
+		for (int j = 0; j < this.matriz[0].length; j++) {
+		    this.matriz[i][j] = this.matriz[i][j] + m.matriz[i][j];
+		}
+	    }
+	} else {
+	    System.out.print ("Matrices de tamaños diferentes");
+	}
+    }
+    
+    //Función que calcula producto de matrices
+    public void matrixProduct (Matrix m) {
+
+	if (this.matriz.length == m.matriz.length && this.matriz[0].length == m.matriz[0].length) {
+	    Matrix original = new Matrix (this.matriz);
+	    
+	    for(int i = 0; i < this.n; i++){
+		for(int j = 0; j < this.m; j++){
+		    for(int k = 0; k < this.n; k++){		    
+			this.matriz[i][j] += original.matriz[i][j] * m.matriz[k][j];
+			
+		    }
+		}
+		
+	    }
+	    for(int i = 0; i < this.n; i++){
+                for(int j = 0; j < this.m; j++){
+		    this.matriz[i][j] -= original.matriz[i][j];
+		}
+	    }
+        } else {
+            System.out.print ("Matrices de tamaños diferentes");
+        }
+    }
+    
+    //Función que obtiene el elemento i j
+    public double getElement (int i, int j) {
+	return this.matriz[i][j];
+    }
+    
+    //function set element
+    public void setElement (int i, int j,double e) {
+	this.matriz[i][j] = e;
+    }
+    
+    //Función que calcula el determinante si es nxn
+    public int determinant(){return 0;}
+    //Función que te dice si 2 matrices son iguales
+    @Override
+    public boolean equals(Object o){
+	/*for (int i = 0; i ) {
+	    if (){
+	    }
+	    }*/
+	
+	return false;
+    }
+}
