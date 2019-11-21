@@ -30,6 +30,9 @@ public class Writter {
             Path path = Paths.get("hola.txt");
             
 			Path poth = Paths.get("csv.txt");//La ruta de donde está mi archivo
+            
+            String a = "";
+            
             List<String> lines = Files.readAllLines(poth);
 			for (String string : lines) {
 				
@@ -39,9 +42,11 @@ public class Writter {
 				
 				double rew [] = {Math.sqrt(Math.pow(raw[0],2)+Math.pow(raw[1],2)),Math.atan(Math.toRadians(raw[1]/raw[0]))};
 				//Lo escribo
-				String a = String.valueOf(rew[0]) + "," + String.valueOf(rew[1]);
-				Files.write(path,a.getBytes());
+				a = a + String.valueOf(rew[0]) + "," + String.valueOf(rew[1]) + "\n";
+				
+
 			}
+			Files.write(path, a.getBytes());
         }catch(IOException e){
             System.err.println(e.getMessage());
         }
